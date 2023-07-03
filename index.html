@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="'https://fonts.googleapis.com/css2?family=Archivo+Black&family=Charm:wght@700&display=swap">
+    <title>Buson Company</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .topbar {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: blueviolet;
+            color: azure;
+        }
+
+        .navbar {
+            /* background-color: aliceblue; */
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 30px;
+            margin-left: 90px;
+            marging-top: 20px;
+        }
+
+        .ul {
+            float: right;
+            margin-right: 90px;
+        }
+
+        ul li {
+            display: inline-block;
+            margin: 0px;
+            line-height: 85px;
+            margin-top: -35px;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #ff0000;
+            color: #fff;
+        }
+
+        .active {
+            background-color: #FF0000;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .active:hover {
+            background-color: #ccc;
+            color: #ff0000;
+            font-weight: bold;
+
+        }
+
+        .h1_banner {
+            background-image: url('./img/h1_hero.jpg');
+            width: 98%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+            padding-bottom: 200px;
+            padding-top: 200px;
+            margin-left: 28px;
+            font-size: 25px;
+            background-position: auto;
+            color: #FF0000;
+        }
+
+        .heading {
+            font-family: 'Archivo Black', sans-serif;
+            font-weight: bolder;
+            font-size: 58px;
+            margin-top: 5px;
+            color: blue;
+            padding-bottom: 30px;
+        }
+
+        .btn1 {
+            text-decoration: none;
+            background-color: #FF0000;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+
+        }
+
+        .main {
+            /* border: 3px dotted red; */
+            padding-bottom: 50px;
+            background-color: beige;
+            margin-top: -60px;
+
+
+        }
+
+
+        .container {
+            margin: 50px;
+            margin-left: 60px;
+            padding-top: 50px;
+            background-color: beige;
+
+        }
+
+        .first {
+            /* border: 5px solid #f60; */
+            width: 360px;
+            height: 300px;
+            margin: 10px;
+            float: left;
+            padding-bottom: 100px;
+            margin-left: 15px;
+            background-color: beige;
+
+        }
+
+        .second {
+            /* border: 5px solid #6f0; */
+            width: 360px;
+            height: 300px;
+            margin: 10px;
+            float: left;
+            padding-bottom: 150px;
+            background-color: beige;
+
+        }
+
+        .third {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 4px solid #ff0000;
+            width: 360px;
+            height: 300px;
+            margin: 10px;
+            float: left;
+            padding-bottom: 120px;
+            background-color: #fff;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .caption {
+            font-size: 30px;
+            margin: 10px;
+            background-color: beige;
+
+        }
+
+        .paragraph {
+            text-align: justify;
+            text-justify: inter-word;
+            font-size: 20px;
+            margin: 10px;
+            background-color: beige;
+            color: cadetblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+        .h3p {
+            font-size: 30px;
+            text-align: left;
+            margin: 30px;
+            margin-top: 20px;
+        }
+
+        .h3pp {
+            font-size: 20px;
+            text-align: justify;
+            text-justify: inter-word;
+            margin-left: 20px;
+            line-height: 1.2;
+            text-decoration: none;
+            padding: 20px;
+
+
+        }
+
+        .hr {
+            border: 1px solid red;
+            width: 100px;
+
+
+        }
+
+        .main2 {
+            /* border: 2px solid #000; */
+            padding: 40px;
+        }
+
+        .container2 {
+            background-image: url('./img/wetrusted.jpg');
+            background-size: cover;
+            background-repeat: repeat;
+            background-position-x: left;
+            background-position-y: left;
+            width: 110px;
+            margin-left: 50px;
+            /* border: 2px dotted red; */
+            padding-bottom: 530px;
+            padding-left: 460px;
+        }
+
+        .caption3 {
+            /* border: 1px solid #ff0000; */
+            padding: 20px;
+            width: 400px;
+            height: 350px;
+            float: left;
+            padding: 45px;
+            margin-left: 530px;
+            margin-top: -442px;
+            backdrop-filter: blur(2px);
+
+
+        }
+
+        .cph1 {
+            font-size: 32px;
+            padding-right: 50pxs;
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .cphp {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: justify;
+            text-justify: inter-word;
+            margin-bottom: 60px;
+            line-height: 1.6;
+            font-family: Arial, Helvetica, sans-serif;
+            color: cadetblue;
+
+
+        }
+
+        .btn3 {
+            text-decoration: none;
+            background-color: red;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+
+
+        }
+
+        .heading2 {
+            text-align: center;
+            font-size: 48px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            margin-bottom: 50px;
+        }
+
+        .container3 {
+            /* border: 1px solid #000; */
+            padding: 50px;
+        }
+
+        .Services-img {
+            width: 100%;
+            height: 250px;
+            margin-top: 50px;
+        }
+
+        .container4 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box {
+            width: 30%;
+            height: 200px;
+            border: 1px dotted #000;
+            /* background-color: gray; */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            margin-top: 40px;
+        }
+
+        .center-button {
+            padding: 10px 20px;
+            /*             background-color: #007bff; */
+            color: #ff0000;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .container5 {
+            padding: 20px;
+        }
+
+        .boxA {
+            float: left;
+            padding: 60px;
+            width: 400px;
+            height: 200px;
+            margin: 10px;
+            margin-left: 50px;
+
+        }
+
+        .boxb {
+            background-image: url('./img/completed_case_2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            float: right;
+            padding: 60px;
+            width: 8px;
+            height: 200px;
+            margin: 10px;
+        }
+
+
+        .boxc {
+            background-image: url('./img/completed_case_1.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 60px;
+            float: right;
+            width: 130px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        .boxD {
+            background-image: url('./img/completed_case_2.png');
+            background-repeat: no-repeat;
+            background-position-x: -50px;
+            background-size: cover;
+            float: right;
+            padding: 60px;
+            width: 85px;
+            height: 200px;
+            margin: 10px;
+
+        }
+
+        .btn4 {
+            text-decoration: none;
+            border: 1px solid #000;
+            border-radius: 5px;
+            box-shadow: 2px 3px 5px red;
+            color: red;
+            padding: 10px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+
+
+
+        }
+
+        .h1p {
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .h1pp {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            line-height: 1.4;
+            color: #000;
+
+        }
+
+        .container6 {
+            /* border: 5px solid #ff0000; */
+            width: 100%;
+            height: 550px;
+        }
+
+
+        .circle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+
+        .circle-box {
+            border: 4px dotted blue;
+            width: 150px;
+            height: 150px;
+            background-color: #ccc;
+            border-radius: 50%;
+            position: absolute;
+            /*             transform: translate(-50%, -50%); */
+        }
+
+        .circle-box {
+            margin-top: -100px;
+        }
+
+        .imgA {
+            width: 150px;
+        }
+
+        .heading3 {
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 100;
+            margin-top: 25%;
+        }
+
+        .star2 {
+            width: 20%;
+            margin-top: 20px;
+        }
+
+        .star-content {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .container7 {
+            /*             border: 2px solid red; */
+            width: 100%;
+            height: 600px;
+            padding: 0px;
+        }
+
+        .title-container7 {
+            text-align: center;
+            font-size: 70px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+
+        }
+
+
+        .boxE {
+            /* width: 300px; */
+            height: 400px;
+            /* border: 2px solid red; */
+            float: left;
+            margin: 20px;
+            margin-left: 40px;
+        }
+
+        .h3-block-title {
+            font-size: 18px;
+            color: #ff0000;
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .h3-block-content {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .date {
+            font-size: 15px;
+            margin-left: 20px;
+            margin-top: 10px;
+            color: green;
+            font-weight: bold;
+        }
+
+        .boxF {
+            /* width: 300px; */
+            height: 400px;
+            /*             border: 2px solid red; */
+            float: left;
+            margin: 20px;
+        }
+
+        .boxG {
+            /* width: 300px; */
+            height: 400px;
+            /*             border: 2px solid red; */
+            float: left;
+            margin: 20px;
+        }
+
+        .container8 {
+            /* border: 1px solid red; */
+            background-color: blue;
+            color: #fff;
+            width: 100%;
+            height: 400px;
+            display: flex;
+        }
+
+        .contact-form {
+            /* border: 1px solid #fff; */
+            width: 40%;
+            height: 300px;
+            margin-left: 50px;
+            margin-top: 60px;
+            font-size: 29px;
+        }
+
+        .call-request-paragraph {
+            font-size: 20px;
+            margin-top: 40px
+        }
+
+        .call-request-2box {
+            /* border: 1px solid #fff; */
+            background-color: blue;
+            width: 70%;
+            height: 300px;
+            margin-top: 60px;
+
+
+
+        }
+
+        .contact {
+            margin-top: 20px;
+            margin-left: 120px
+        }
+
+        .text-box {
+            margin: 20px;
+            padding: 15px;
+            padding-right: 70px;
+            background-color: #ccc;
+        }
+
+        .text-boxb {
+            margin: 20px;
+            padding: 15px;
+            padding-right: 160px;
+            background-color: #ccc;
+        }
+
+        .send-button {
+            background-color: #ff0000;
+            color: #fff;
+            text-decoration: none;
+            font-size: 25px;
+            margin-right: 80px;
+            margin-top: -70px;
+            font-weight: 100;
+            /* border: 1px solid blue; */
+            padding: 10px 60px;
+            float: right;
+
+        }
+
+        .send-button:hover {
+            background-color: chartreuse;
+            color: blue;
+            border: 2px solid #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topbar">
+        65/A,17thfloor,Kings land,new york
+        info@consulting.com
+        <div class="icon">
+
+        </div>
+
+    </div>
+    <div class="navbar">
+        <label class="logo"><img src="./project.doc/batch-2023-feb/HTML/Test Second/img/logo/logo.png" alt=""></label>
+        <ul class="ul">
+            <li> <a href="#">HOME</a></li>
+            <li> <a href="#">ABOUT</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CASES</a></li>
+            <li><a href="#">BLOG</a> </li>
+            <li><a href="#">PAGES</a></li>
+            <li> <a href="#" class="active">CONTACT NOW</a></li>
+        </ul>
+    </div>
+
+    </div>
+    <div class="h1_banner">
+        WELCOME TO BUSON
+        <h1 class="heading">WE HELP YOU <br>TO GROW YOUR<br>
+            BUSINESS
+        </h1>
+        <a href="#" class="btn1">Lear more</a>
+
+    </div>
+    <div class="main">
+
+        <div class="container">
+
+            <div class="first"><img src="./img/team_1.jpg">
+                <h3 class="caption">Business Planning</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint autem, magnam
+                    perspiciatis, voluptatum
+                    ex deserunt eos ipsum neque delectus aliquam sit quo vitae aut perferendis, explicabo veritatis
+                    quasi iusto dolor.
+                </p>
+            </div>
+            <div class="second"><img src="./img/team_2.jpg">
+                <h3 class="caption">Financial Projections</h3>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facere assumenda
+                    dolore. Distinctio,
+                    molestias consequatur rem amet quibusdam nostrum vel incidunt corporis dolor, rerum iure dolorem
+                    nulla corrupti. Laboriosam, atque.</p>
+            </div>
+            <div class="third">
+                <h3 class="h3p">What we do<br>
+                    for you
+                    <hr class="hr">
+                </h3>
+                <p class="h3pp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, officia ex
+                    amet, natus corrupti
+                    sapiente aliquam assumenda quidem tempora pariatur magnam. Deleniti aliquam iure blanditiis non
+                    tenetur omnis quo reprehenderit.
+                </p>
+                <div><a href="" class="h3pp">Viem Profile *</a></div>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="main2">
+        <div class="container2"></div>
+        <div class="caption3">
+            <h1 class="cph1"> We are more trusted then 5000 clients</h1>
+            <p class="cphp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur molestiae asperiores
+                dolorem
+                mollitia iure numquam distinctio est, provident fugit aliquam rerum ea dolore nulla ex aut possimus
+                amet natus quibusdam.</p>
+            <div><a href="#" class="btn3">LEARN MORE</a></div>
+        </div>
+        <div class="clear"></div>
+
+    </div>
+    <div class="container3">
+        <h1 class="heading2">Our Services</h1>
+        <div class="container4">
+            <div class="box box1"><img src="./img/ser.1.png" class="Services-img"></div>
+            <div class="box box2"><img src="./img/ser.2.png" class="Services-img"></div>
+            <div class="box box3"><img src="./img/ser3.png" class="Services-img"></div>
+        </div>
+        <div class="button-container">
+            <button class="center-button">More Services</button>
+        </div>
+    </div>
+    <div class="container5">
+        <div>
+            <div class="boxA">
+                <h1 class="h1p"> Completed Cases</h1>
+                <p class="h1pp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ea quibusdam veniam
+                    libero pariatur sequi
+                    corporis aut quia? Rem perspiciatis ea accusamus perferendis quibusdam eum nihil consectetur
+                    expedita
+                    eaque iusto.</p>
+                <div><a href="#" class="btn4">SEE MORE</a></div>
+            </div>
+            <div class="boxb"></div>
+            <div class="boxc"></div>
+            <div class="boxD"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="container6">
+        <div class="circle-container">
+            <div class="circle-box">
+                <img src="./img/Homepage_testi.png" class="imgA">
+            </div>
+            <div class="heading3">
+                <div>You can't succeed if you just do what others do and </div>
+                <div>follow the well-worn poth. You need to create a new and </div>
+                <div>original path for yourself </div>
+                <img src="./img/star2.png" class="star2">
+                <div class="star-content">CLIFFORD FRAZIER-Colorlib Themes</div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="container7">
+        <div class="title-container7">Our Recent News</div>
+        <div class="boxE">
+            <img src="./img/rcent_1.png" alt="">
+            <div class="h3-block-title">Business Planning</div>
+            <div class="h3-block-content">Amazing Places to Visit in <br> Summer</div>
+            <div class="date">Nov 30,2020</div>
+        </div>
+        <div class="boxF">
+            <img src="./img/rcent_2.png" alt="">
+            <div class="h3-block-title">Audit</div>
+            <div class="h3-block-content">Amazing Places to Visit in <br> Summer</div>
+            <div class="date">Nov 30,2020</div>
+        </div>
+        <div class="boxG"><img src="./img/rcent_3.png" alt="">
+            <div class="h3-block-title">Business Planningt</div>
+            <div class="h3-block-content">Amazing Places to Visit in <br> Summer</div>
+            <div class="date">Nov 30,2020</div>
+        </div>
+    </div>
+    <div class="container8">
+        <div class="contact-form">
+            <h1>Request for call back</h1>
+            <p class="call-request-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos quas et,
+                quis soluta
+                nesciunt
+                placeat
+                corrupti necessitatibus possimus quod rem? Quia eligendi possimus animi id. Accusamus incidunt
+                veniam
+                voluptates eaque?
+            </p>
+        </div>
+        <div class="call-request-2box">
+            <form class="contact" action="" method="post">
+                <div> <input type="text" name="name" class="text-box" placeholder="your name " required>
+                    <input type="text" name="phone" class="text-box" placeholder="Phone " required>
+                </div>
+                <div><input type="text" name="Services" class="text-boxb" placeholder="Services " required></div>
+                <div><a href="#" class="send-button">Send</a></div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
