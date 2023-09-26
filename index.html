@@ -3,191 +3,56 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" ;>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap">
-    <title>Flipkart</title>
-
+    <title>To Do List</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         html,
         body {
-            margin: 0px;
-            padding: 0px;
-            background-color: white;
+            margin: 50px;
+            padding: 50px;
 
         }
 
-        .main {
-            border: 4px dotted #000;
-            padding-bottom: 10px;
-            background-color: maroon;
-
-        }
-
-        .main-heading {
-            margin-left: 50px;
-            color: #fff;
-        }
-
-        .container {
-            border: 4px dashed black;
-            width: 90%;
-            margin: 0 auto;
-            padding-bottom: 18px;
-            background-color: blue;
-        }
-
-        .first {
-            border: 5px solid #000;
-            width: calc(25% - 14px);
-            float: left;
-            padding-bottom: 101px;
-            padding-left: 2px;
-            background-color: burlywood;
-        }
-
-        .h2p {
-            margin-top: 1px;
-            font-size: 30px;
-            font-family: 'Sedgwick Ave Display', cursive;
-            color: red;
-            text-shadow: 4px 2px 3px #000;
-
-        }
-
-        .h2pp {
-            margin-left: 9px;
-            margin-bottom: 20px;
-            font-size: 25px;
-            color: #000;
-            font-family: 'Ysabeau', sans-serif;
-
-        }
-
-        .second {
-            border: 5px solid #000;
-            width: calc(25% - 12px);
-            float: left;
-            padding-bottom: 32px;
-            padding-left: 3px;
-            background-color: seagreen;
-        }
-
-
-        .third {
-            border: 5px solid #000;
-            width: calc(25% - 12px);
-            float: left;
-            padding-bottom: 32px;
-            padding-left: 3px;
-            background-color: chartreuse;
-        }
-
-
-        .four {
-            border: 5px solid #000;
-            width: calc(25% - 12px);
-            float: left;
-            padding-bottom: 135px;
-            padding-left: 4px;
-            background-color: deeppink;
-        }
-
-        .clear {
-            clear: both;
-        }
-
-        .footer {
-            border: 2px solid red;
-            width: 90%;
-            margin: 0 auto;
-            padding: 5px;
-            background-color: oldlace;
-        }
-
-        .box-1 {
-            border: 2px solid blue;
-            width: 15%;
-            float: left;
-            padding: 40px;
-            background-image: url('./bird.jpg');
-            background-repeat: no-repeat;
-        }
-
-
-        .box-2 {
-            border: 2px solid blue;
-            background-color: grey;
-            width: 75%;
-            float: left;
-            padding: 0px;
-            padding-right: 14px;
-            margin-left: 10px;
-
-        }
-
-        .headline {
-            margin: 20px;
-            margin-left: 90px;
-            font-size: 25px;
-            font-family: 'Pacifico', cursive;
-
-        }
-
-        .h1 {
-            text-align: center;
-            color: blue;
-            text-shadow: 4px 0px 4px white;
-            font-size: 26px;
-            font-family: 'Charm', cursive;
-
+        li {
+            flex: 1;
+            justify-content: space-between;
+            /* align-items: center; */
+            margin: 5px 0;
+            /* list-style-type: decimal; */
         }
     </style>
+
 </head>
 
 <body>
-    <div class="main">
-        <div class="main-heading">Hello! welcome to my website</div>
-        <div class="container">
-            <!-- <div>Beautiful quotes</div> -->
-            <div class="first">
-                <h2 class="h2p"> Hard work matters</h2>
-                <p class="h2pp">“There are no secrets to success. It is the result of preparation, hard work, and
-                    learning from
-                    failure.”
-                </p>
-            </div>
-            <div class="second">
-                <h2 class="h2p"> Don’t give in</h2>
-                <p class="h2pp">“People always say that I didn’t give up my seat because I was tired, but that isn’t
-                    true. I was not tired physically… No, the only tired I was, was tired of giving in.”
-                </p>
-            </div>
-            <div class="third">
-                <h2 class="h2p">Love what .....</h2>
-                <p class="h2pp">“Success is no accident. It is hard work, perseverance, learning, studying, sacrifice
-                    and most of all, love of what you are doing or learning to do.” </p>
-            </div>
-            <div class="four">
-                <h2 class="h2p">No-one’s born with..</h2>
-                <p class="h2pp">“If people only knew how hard I’ve worked to gain my mastery, it wouldn’t seem so
-                    wonderful at all.”</p>
-            </div>
-            <div class="clear"></div>
-        </div>
-        <div class="headline">Hello! cute birds</div>
-        <div class="footer">
-            <div class="box-1"></div>
-            <div class="box-2">
-                <h1 class="h1">A friend is someone who knows all about you and still loves you. </h1>
-            </div>
-            <div class="clear"></div>
-        </div>
 
-    </div>
+    <body>
+        <h2> To Do List</h2>
+        <input type="text" name="ListItem" id="textInput">
+        <button id="button">Add Task</button>
+        <ol></ol>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#button').click(function () {
+                var Add = $('#textInput').val();
+                $('ol').append('<li>' + Add + '<button class="delete">Delete</button></li > ');
+                $('#textInput').val('');
+            });
+            $('ol').on('click', '.delete', function () {
+                $(this).parent().remove();
+            });
 
+        }
+        );
+    </script>
 </body>
 
 </html>
